@@ -9,7 +9,7 @@
 <body>
     <header> 
      <h1 class= "title1">Northside Youth Soccer League</h1>
-        <div class= "logo">  <img src="/images/nysl_logo.png" alt= "logo"></div>
+        <div class= "logo">  <img src="./images/nysl_logo.png" alt= "logo"></div>
         <div class= "background" ></div>
         <div class= "socialmedia"> <img src="./images/facebook.png" alt="icons">
         <img src="./images/instagram.png" alt="icons"><img src="./images/youtube.png" alt="icons"></div>
@@ -24,41 +24,48 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="body">
         <h3 class="title4">Registration Form <i class="far fa-file-alt"></i></h3>
         <form action="./show_data.html" method="GET">
 
         <div class="form1">
-              <div> <label for="firstname">First Name:</label> <input type="text" name="firstname" id="firstname" title="This field is required" required>
-                  <label for="lastname">Last Name:</label> <input type="text" name="lastname" id="lastname" title="This field is required" required> </div>
-              <div><label for="address">Street Address:</label> <input type="text" name="address" id="address" title="This field is required" required></div>
-              <div> <label for="city">City:</label> <input type="text" name="city" id="city" title="This field is required" required>
-                  <label for="zip">Zip Code:</label> <input type="text" name="zip" id="zip" pattern="[0-9]*" title="This field is required" required ></div>
-              <div class="birthdate"> <label>Birthdate:</label>
-                  <label for="month">Month:</label> <input type="number" min="1" max="12" name="month" id="month" title="This field is required" required>
-                  <label for="day">Day:</label> <input type="number" min="1" max="31" name="day" id="day" title="This field is required" required>
-                  <label for="year">Year:</label> <input type="number" min="2000" max="2020" name="year" id="year" title="This field is required" required>
+          <div class="clusterone">
+              <div class="clusterone1"> 
+                <label for="firstname">First Name:  <input type="text" name="firstname" id="firstname" title="This field is required" required></label> 
+                <label for="city">City: <input type="text" name="city" id="city" title="This field is required" required></label> 
+                <div class="birthdate"> <label>Birthdate:</label>
+                            <label for="month">Month: <input type="number" min="1" max="12" name="month" id="month" title="This field is required" required></label> 
+                            <label for="day">Day: <input type="number" min="1" max="31" name="day" id="day" title="This field is required" required></label> 
+                            <label for="year">Year: <input type="number" min="2000" max="2020" name="year" id="year" title="This field is required" required></label> 
+                </div>
+              </div>   
+                      
+              <div class="clusterone2"> 
+                <label for="lastname">Last Name: <input type="text" name="lastname" id="lastname" title="This field is required" required>  </label> 
+                <label for="address">Street Address:<input type="text" name="address" id="address" title="This field is required" required>  </label> 
+                <label for="zip">Zip Code:  <input type="text" name="zip" id="zip" pattern="[0-9]*" title="This field is required" required ></label> 
               </div>
-              <div><label>Gender:</label>
-                  <input type="radio" name="gender" id="female" required> <label for="female" > Female</label>
-                  <input type="radio" name="gender" id="male" required>  <label for="male"> Male</label>
-              </div>              
+           </div>    
+          <div class="clustertwo"><label>Gender:</label>
+                   <label for="female" > Female <input type="radio" name="gender" id="female" required></label>
+                   <label for="male"> Male <input type="radio" name="gender" id="male" required>  </label>
+          </div>              
                 
-              <div> 
-                  <label>Grade:</label>
-                  <input type="radio" name="grade" id="Pre-School" required> <label for="Pre-School">Pre-School</label>
-                  <input type="radio" name="grade" id="first" required><label for="first"> 1st</label>
-                  <input type="radio" name="grade" id="second" required> <label for="second">2nd</label>
-                  <input type="radio" name="grade" id="third" required><label for="third">3rd</label>
-                  <input type="radio" name="grade" id="fourth" required> <label for="fourth">4th</label>
-                  <input type="radio" name="grade" id="fifth" required>  <label for="fifth">5th</label>
-              </div>
-              <div class="guardian"><label for="parent">Parent / Guardian:</label> <input type="text" name="name" id="parent" required></div>
-              <div class="details"><label for="contactphone">Contact Phone:</label> <input type="tel" name="phone" id="contactphone" required>
-                <label for="contactemail">Contact Email:</label><input type="email" name="email" id="contactemail" required> </div>  
-         </div>
+          <div class="clusterthree"> 
+                <label>Grade:</label>
+                 <label for="Pre-School">Pre-School  <input type="radio" name="grade" id="Pre-School" required> </label>
+                 <label for="first"> 1st  <input type="radio" name="grade" id="first" required></label>
+                 <label for="second">2nd <input type="radio" name="grade" id="second" required></label>
+                 <label for="third">3rd <input type="radio" name="grade" id="third" required></label>
+                 <label for="fourth">4th <input type="radio" name="grade" id="fourth" required></label>
+                 <label for="fifth">5th <input type="radio" name="grade" id="fifth" required> </label>
+          </div>
 
-       
+          <div class="clusterfour"><label for="parent">Parent / Guardian: <input type="text" name="name" id="parent" required></label></div>
+          <div class="clusterfive"><label for="contactphone">Contact Phone: <input type="tel" name="phone" id="contactphone" required></label> 
+                <label for="contactemail">Contact Email:<input type="email" name="email" id="contactemail" required></label> </div>  
+        </div>
+        
         <div class="form2">
           <div> <h6><strong>Which elementary schools do you live near? </strong></h6></div>
            
@@ -85,17 +92,17 @@
         <div class="form3">
             <div class="role1">
               <div><label><strong>What position(s) do you normally play?</strong> (check all that apply)</label></div>
-              <div><input  type="checkbox" name="name" id="position1"> <label for="position1" >Forward</label>
-              <input  type="checkbox" name="name" id="position2"> <label for="position2" >Midfield</label></div>
-              <div><input  type="checkbox" name="name" id="position3"> <label for="position3" >Defense</label>
-              <input  type="checkbox" name="name" id="position4"> <label for="position4" >Goalkeeper</label> </div>
+              <div> <label for="position1" >Forward <input  type="checkbox" name="name" id="position1"></label>
+              <label for="position2" > Midfield  <input  type="checkbox" name="name" id="position2"> </label></div>
+              <div> <label for="position3" >Defense <input  type="checkbox" name="name" id="position3"></label>
+              <label for="position4" >Goalkeeper  <input  type="checkbox" name="name" id="position4"></label> </div>
             </div>
             <div class="role1">
                 <div><label><strong>What position(s) do you want to play?</strong> (check all that apply)</label></div>
-                <div><input  type="checkbox" name="name" id="position5"> <label for="position5" >Forward</label>
-                <input  type="checkbox" name="name" id="position6"> <label for="position6" >Midfield</label></div>
-                <div><input  type="checkbox" name="name" id="position7"> <label for="position7" >Defense</label>
-                <input  type="checkbox" name="name" id="position8"> <label for="position8" >Goalkeeper</label> </div>   
+                <div> <label for="position5" >Forward <input  type="checkbox" name="name" id="position5"></label>
+                <label for="position6" >Midfield <input  type="checkbox" name="name" id="position6"></label></div>
+                <div> <label for="position7" >Defense <input  type="checkbox" name="name" id="position7"></label>
+                <label for="position8" >Goalkeeper  <input  type="checkbox" name="name" id="position8"></label> </div>   
              </div>
           </div>
         
@@ -105,26 +112,42 @@
           <div class="form5">
             <div class="uniform">
                 <label><strong>Jersey:</strong></label>
-                <div><input type="checkbox" name="size" id="ys"> <label for="ys"> Youth Small</label> 
-                <input type="checkbox" name="size" id="m">  <label for="m">Medium</label>
-                <input type="checkbox" name="size" id="ym">  <label for="ym">Youth Medium</label> </div>  
-                <div><input type="checkbox" name="size" id="l">  <label for="l">Large</label>  
-                <input type="checkbox" name="size" id="yl">  <label for="yl">Youth Large</label> 
-                <input type="checkbox" name="size" id="xl">  <label for="xl">Extra Large</label>
-                <input type="checkbox" name="size" id="s">  <label for="s">Small</label></div>
-            </div>
+                <div class="size1">
+                  <input type="checkbox" name="size" id="ys"> <label class="lblsize" for="ys"> Youth Small</label>
+                  <input type="checkbox" name="size" id="l">  <label class="lblsize" for="l">Large</label>  
+                  </div>
+                <div class="size1">
+                  <input type="checkbox" name="size" id="m">  <label class="lblsize" for="m">Medium</label>
+                  <input type="checkbox" name="size" id="yl">  <label class="lblsize" for="yl">Youth Large</label>
+                </div>
+                <div class="size1">
+                    <input type="checkbox" name="size" id="ym">  <label  class="lblsize" for="ym">Youth Medium</label> 
+                    <input type="checkbox" name="size" id="xl">  <label  class="lblsize" for="xl">Extra Large</label>
+                </div>
+                <div class="size1">
+                    <input type="checkbox" name="size" id="s">  <label class="lblsize" for="s">Small</label>
+                </div>
+              </div>  
+
             <div class="uniform2">
-                <label><strong>Shorts:</strong></label>
-                <div><input type="checkbox" name="size" id="yys"> <label for="yys"> Youth Small</label>  
-                <input type="checkbox" name="size" id="mmm">  <label for="mmm">Medium</label> 
-                <input type="checkbox" name="size" id="yym">  <label for="yym">Youth Medium</label> </div>  
-                <div><input type="checkbox" name="size" id="lll">  <label for="lll">Large</label> 
-               <input type="checkbox" name="size" id="yyl">  <label for="yyl">Youth Large</label> 
-               <input type="checkbox" name="size" id="xxl">  <label for="xxl">Extra Large</label> 
-               <input type="checkbox" name="size" id="ss">  <label for="ss">Small</label></div>
+                  <label><strong>Shorts:</strong></label>
+                  <div class="size1">
+                    <input type="checkbox" name="size" id="yys"> <label class="lblsize" for="yys"> Youth Small</label>
+                    <input type="checkbox" name="size" id="ll">  <label class="lblsize" for="ll">Large</label>  
+                    </div>
+                  <div class="size1">
+                    <input type="checkbox" name="size" id="mm">  <label class="lblsize" for="mm">Medium</label>
+                    <input type="checkbox" name="size" id="yyl">  <label class="lblsize" for="yyl">Youth Large</label>
+                  </div>
+                  <div class="size1">
+                      <input type="checkbox" name="size" id="yym">  <label class="lblsize" for="yym">Youth Medium</label> 
+                      <input type="checkbox" name="size" id="xxl">  <label class="lblsize" for="xxl">Extra Large</label>
+                  </div>
+                  <div class="size1">
+                      <input type="checkbox" name="size" id="ss">  <label class="lblsize" for="ss">Small</label></div>
+                </div>
             </div>
           </div>
-        </div>
         
         <div class="terms">
          <h6 class=subtitle>Permission to Play</h6>
@@ -138,8 +161,8 @@
 
           <p class="p5">By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the cancellation policy and agree to its terms.</p>
     
-          <div class="signature"> <label for="signature">Parent / Guardian Signature:</label><input type=text name="signature" id="signature"  title="This field is required" required> 
-          <label for="date">Date:</label> <input type=text name="date" id="date" placeholder="mm/dd/yyyy" title="This field is required" required></div>
+          <div class="signature"> <label for="signature">Parent / Guardian Signature:<input type=text name="signature" id="signature"  title="This field is required" required> </label>
+          <label for="date">Date:<input type=text name="date" id="date" placeholder="mm/dd/yyyy" title="This field is required" required></label> </div>
         
           <button type="submit" class="submitbtn">Submit</button>
           </div>

@@ -91,6 +91,17 @@ a {
     text-decoration: underline;
  }
 
+ /* MAIN SECTION */
+
+.body {
+
+    margin-left: 100px;
+    margin-right: 130px;
+    margin-bottom: 50px;
+    margin-top: 49px;
+}
+
+
 /* ========================================== INDEX =================================================== */
 
 /* HEADER INDEX */
@@ -105,27 +116,19 @@ a {
 .homepage {
     display:flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    margin-left:70px;
-    margin-right:70px;
+    justify-content:space-evenly;
+    align-items: flex-start;
     margin-top:30px;
     margin-bottom: 40px;
-}
-
-.image {
-    margin-top: 0px; 
-    margin-right: -172px;
-    margin-bottom: 0px;
-    margin-left: 0px;
 }
 
 
 .image img {
     border-radius: 8px;
     height: auto;
-    width:80%;
+    width:75%;
    
-} */
+} 
 
 /* UPCOMING EVENTS */
 
@@ -133,6 +136,8 @@ a {
     display:flex;
     flex-direction: column;
     line-height: 27px;
+    margin-left: -210px;
+
 } 
 
 .far.fa-calendar-alt /* ICON */ {
@@ -173,9 +178,9 @@ a {
     display: flex;
     flex-flow: column;
     width: 44%;
-    margin-top: 26px;
+    /* margin-top: 26px;
     margin-left: 116px;
-    margin-bottom: 40px;
+    margin-bottom: 40px; */
 }
 
 .title3 { 
@@ -194,7 +199,6 @@ h3 {
 .p2 { 
     font-size: 18px;
     color: black; 
-    margin: 24px;
     line-height: 150%;
     max-width:60em;
 }
@@ -227,26 +231,21 @@ h3 {
     font-style: italic;
     padding-top: 24px;
     padding-bottom: 14px;
-    margin-left:220px;
 }
 
 .p4 {
     color: black;
     text-align: left;
     font-style: italic;
-    margin-left:220px;
     padding-bottom: 20px;
 }
 
 /* TABLES */
 
 .table1, .table2, .table3 {
-    margin-left:auto; 
-    margin-right:auto;
-    margin-bottom:50px;
     display:table;
     color: black;
-    width:70%;
+    width:100%;
     padding-bottom: 28px;
     padding-top:10px;
     font-size: 18px;
@@ -254,6 +253,7 @@ h3 {
     border:outset;
     border-radius: 5px;
     background-color: lightgrey; 
+    margin-bottom:20px;
 }
 
 .gameaddress {
@@ -264,10 +264,7 @@ h3 {
 }
 
 .bottom {
-    margin-left:auto; 
-    margin-right:auto;
-    margin-bottom:50px;
-    width:70%;
+    width:100%;
     border:outset;
     border-radius: 5px;
     background-color: lightgrey; 
@@ -277,11 +274,9 @@ h3 {
 }
 
 .contacts{
-    width:90%;
+    width:100%;
     display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
+    flex-direction: column;
     margin-left:0px;
 }
 
@@ -320,14 +315,12 @@ td {
 }
 
 .maps {
-    width:60%;
-    margin-left:264px; 
-    margin-right:auto;
-    margin-bottom:auto;
+    width:70%;
     padding: 10px;
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-left:200px;
 }
 
 .mapimag {
@@ -348,7 +341,7 @@ td {
 .fas.fa-arrow-up /* icon */{
     font-size: 54px;
     position:fixed;
-    right:30px;
+    right:37px;
     bottom: 20px;
     color:lawngreen;
     width:50px;
@@ -385,11 +378,8 @@ td {
 
 .wrapper {
     color: black; 
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 24px;
-    margin-bottom: 50px;
-    width:70em;
+    margin-bottom: 50px; 
     font-size: 18px;
     line-height: 150%;
     display:flex;
@@ -469,12 +459,8 @@ ul.f li {
 
 .form1, .form2, .form3, .terms, .form45 {
     display: flex;
-    width: 86%;
     margin-top:30px;
-    margin-left: auto;
-    margin-right: auto;
-    flex-direction: column;  
-    line-height: 30px;
+    line-height: 34px;
     font-size: 18px;
     border:solid;
     border-color: darkslategray;
@@ -483,12 +469,66 @@ ul.f li {
     padding:20px;
 }
 
-.dropdownmenu /* belongs to form 2 */ {
-    margin-left: 17px;
-    width: 152px;
+.form2,.form45,.terms {
+    flex-direction: column;
+  }
+  .form1:hover, .form2:hover,.form3:hover, .terms:hover, .form45:hover {
+      border:solid;
+      border-color: teal;
+      background-color:lightgrey;
+      border-width: 5px;
+  }
+
+
+/* Form1 */
+.form1 {
+    display:flex;
+    flex-direction: column;
+}
+.clusterone {
+    display:flex;
+    justify-content: space-between;
+}
+.clusterone1 {
+    display:flex;
+    flex-direction:column;
+    width:50%;
+}
+.clusterone2 {
+    display:flex;
+    flex-direction:column;
+    width:50%;
+}
+
+.clustertwo, .clusterthree, .clusterfour, .clusterfive {
+
+    display:flex;
+    align-items: flex-start;
+}
+
+.birthdate {
+    display:flex;
+    flex-flow: row;
+} 
+
+/* Form2 */
+
+.dropdownmenu  {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
     height: 22px;
     font-size: medium;
+    margin-left:9px;
 }
+
+.form3 {
+
+    display:flex;
+    justify-content: space-between;
+}
+
+/* Form45 */
 
 .form4 /* part of form 45 */  {
     margin-bottom: 24px;
@@ -498,21 +538,29 @@ ul.f li {
 .form5 /* part of form 45 */  {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 10px;
     margin-top:10px;
     font-size: 18px;
     line-height: 30px;
-    width: 86%;    
+
 }
-.uniform /* belongs to form 5 */ { 
-    flex-grow:1;
+.uniform/* belongs to form 5 */ { 
+    display:flex;
+    flex-direction: row;
 }
-.form1:hover, .form2:hover,.form3:hover, .terms:hover, .form45:hover {
-    border:solid;
-    border-color: teal;
-    background-color:lightgrey;
-    border-width: 5px;
+
+.uniform2/* belongs to form 5 */   { 
+ display:flex;
+ flex-direction: row;
+} 
+
+.size1 /* belongs to form 5 */ {
+    display:flex;
+    flex-direction: column;
+    margin-top: 15px;
 }
+
 
 /* LABELS */
 
@@ -530,52 +578,37 @@ h6 {
     line-height: 22px;   
  }
 
-.signature { 
-    padding-top:26px;
-    font-size: 18px;
-    padding-left: 5px;
+.lblsize {
+
+margin-top: -28px;
+padding-left:15px;
+
 }
 
-.guardian{
-    margin-top: 6px;
-    margin-left: 1px;
+.signature {
+    margin-left:5px;
+}
+/* input */
+
+#firstname, #lastname {
+    width:81%;
 }
 
-.birthdate {
-    display:flex;
-    flex-flow: row;
+#city{
+    width:91%;
+}
+#address {
+    width:76%;
 }
 
-.details {
-    margin-top: 6px;
-    margin-left: 1px;
+#zip {
+    width:83%;
 }
 
-.subtitle {
-    text-decoration:underline;
-    text-align: left;
-    font-size: 18px;
-    margin-left: 11px;
+#signature, #date {
+    width:32%;
 }
 
-/* INPUT */
-
-#firstname, #lastname, #city, #zip,#contactphone, #contactemail, #signature, #date,
-#address,#parent {
-    width: 35%;
-    height: 34px;
-    margin: 4px;
-    font-size: 16px;
-    padding: 2px 2px 2px 2px;
-}
-
-#month,#day,#year {
-    width: 5%;
-    height: auto;
-    margin: 4px;
-    font-size: 16px;
-    padding: 2px 2px 2px 2px;
-} 
 
 /* SUBMIT BUTTON */
 
@@ -595,6 +628,8 @@ button:hover{
 
 label{
     padding:7px;
+    padding-right:14px;
+    margin-top: -18px;
 }
 
 /* ============================================= CONTACT US ========================================== */
@@ -603,7 +638,6 @@ label{
 }
 
 .moresection {
-    margin-left: 236px;
     margin-top: 54px;
     width:60em;
     line-height: 150%;
