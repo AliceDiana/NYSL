@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>NYSL_About_us</title>
+    <link href="nysl_3.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/834fbbddb8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header> 
+     <h1 class= "title1">Northside Youth Soccer League</h1>
+        <div class= "logo">  <img src="/images/nysl_logo.png" alt= "logo"></div>
+        <div class= "background" ></div>
+        <div class= "socialmedia"> <img src="./images/facebook.png" alt="icons">
+        <img src="./images/instagram.png" alt="icons"><img src="./images/youtube.png" alt="icons"></div>
+        <nav >
+          <ul> 
+              <li ><a href="./index.html">Home</a></li>
+              <li ><a href="./about_us.html" >About Us</a></li>
+              <li ><a href="./gameinfo.html">Game Info</a></li>
+              <li ><a href="./rules_policies.html">Rules & Policies</a></li>
+              <li ><a href="./registration_form.html" class="active_page">Join Us</a></li>
+              <li ><a href="./contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h3 class="title4">Registration Form <i class="far fa-file-alt"></i></h3>
+        <form action="./show_data.html" method="GET">
+
+        <div class="form1">
+              <div> <label for="firstname">First Name:</label> <input type="text" name="firstname" id="firstname" title="This field is required" required>
+                  <label for="lastname">Last Name:</label> <input type="text" name="lastname" id="lastname" title="This field is required" required> </div>
+              <div><label for="address">Street Address:</label> <input type="text" name="address" id="address" title="This field is required" required></div>
+              <div> <label for="city">City:</label> <input type="text" name="city" id="city" title="This field is required" required>
+                  <label for="zip">Zip Code:</label> <input type="text" name="zip" id="zip" pattern="[0-9]*" title="This field is required" required ></div>
+              <div class="birthdate"> <label>Birthdate:</label>
+                  <label for="month">Month:</label> <input type="number" min="1" max="12" name="month" id="month" title="This field is required" required>
+                  <label for="day">Day:</label> <input type="number" min="1" max="31" name="day" id="day" title="This field is required" required>
+                  <label for="year">Year:</label> <input type="number" min="2000" max="2020" name="year" id="year" title="This field is required" required>
+              </div>
+              <div><label>Gender:</label>
+                  <input type="radio" name="gender" id="female" required> <label for="female" > Female</label>
+                  <input type="radio" name="gender" id="male" required>  <label for="male"> Male</label>
+              </div>              
+                
+              <div> 
+                  <label>Grade:</label>
+                  <input type="radio" name="grade" id="Pre-School" required> <label for="Pre-School">Pre-School</label>
+                  <input type="radio" name="grade" id="first" required><label for="first"> 1st</label>
+                  <input type="radio" name="grade" id="second" required> <label for="second">2nd</label>
+                  <input type="radio" name="grade" id="third" required><label for="third">3rd</label>
+                  <input type="radio" name="grade" id="fourth" required> <label for="fourth">4th</label>
+                  <input type="radio" name="grade" id="fifth" required>  <label for="fifth">5th</label>
+              </div>
+              <div class="guardian"><label for="parent">Parent / Guardian:</label> <input type="text" name="name" id="parent" required></div>
+              <div class="details"><label for="contactphone">Contact Phone:</label> <input type="tel" name="phone" id="contactphone" required>
+                <label for="contactemail">Contact Email:</label><input type="email" name="email" id="contactemail" required> </div>  
+         </div>
+
+       
+        <div class="form2">
+          <div> <h6><strong>Which elementary schools do you live near? </strong></h6></div>
+           
+           <div><label for="schoollist1"> First Closest School</label>
+                <select class="dropdownmenu"  id="schoollist1" name="schools">
+                <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                <option value="Greenbay">Greenbay</option>
+                <option value="Howard A Yeager">Howard A Yeager</option>
+                <option value="Marjorie P Hart">Marjorie P Hart</option>
+                </select> 
+              </div>
+          
+            <div><label for="schoollist2"> Second Closest School</label>
+               <select class="dropdownmenu" id="schoollist2" name="schools">
+                <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                <option value="Greenbay">Greenbay</option>
+                <option value="Howard A Yeager">Howard A Yeager</option>
+                <option value="Marjorie P Hart">Marjorie P Hart</option>
+                </select> 
+            </div>
+        </div>
+
+      
+        <div class="form3">
+            <div class="role1">
+              <div><label><strong>What position(s) do you normally play?</strong> (check all that apply)</label></div>
+              <div><input  type="checkbox" name="name" id="position1"> <label for="position1" >Forward</label>
+              <input  type="checkbox" name="name" id="position2"> <label for="position2" >Midfield</label></div>
+              <div><input  type="checkbox" name="name" id="position3"> <label for="position3" >Defense</label>
+              <input  type="checkbox" name="name" id="position4"> <label for="position4" >Goalkeeper</label> </div>
+            </div>
+            <div class="role1">
+                <div><label><strong>What position(s) do you want to play?</strong> (check all that apply)</label></div>
+                <div><input  type="checkbox" name="name" id="position5"> <label for="position5" >Forward</label>
+                <input  type="checkbox" name="name" id="position6"> <label for="position6" >Midfield</label></div>
+                <div><input  type="checkbox" name="name" id="position7"> <label for="position7" >Defense</label>
+                <input  type="checkbox" name="name" id="position8"> <label for="position8" >Goalkeeper</label> </div>   
+             </div>
+          </div>
+        
+        <div class=form45>
+          <div class="form4"><input type="checkbox" name="size" id="size"> <label for="size"><strong>Already Have a Uniform Jersey Size:</strong> </label> 
+          </div>
+          <div class="form5">
+            <div class="uniform">
+                <label><strong>Jersey:</strong></label>
+                <div><input type="checkbox" name="size" id="ys"> <label for="ys"> Youth Small</label> 
+                <input type="checkbox" name="size" id="m">  <label for="m">Medium</label>
+                <input type="checkbox" name="size" id="ym">  <label for="ym">Youth Medium</label> </div>  
+                <div><input type="checkbox" name="size" id="l">  <label for="l">Large</label>  
+                <input type="checkbox" name="size" id="yl">  <label for="yl">Youth Large</label> 
+                <input type="checkbox" name="size" id="xl">  <label for="xl">Extra Large</label>
+                <input type="checkbox" name="size" id="s">  <label for="s">Small</label></div>
+            </div>
+            <div class="uniform2">
+                <label><strong>Shorts:</strong></label>
+                <div><input type="checkbox" name="size" id="yys"> <label for="yys"> Youth Small</label>  
+                <input type="checkbox" name="size" id="mmm">  <label for="mmm">Medium</label> 
+                <input type="checkbox" name="size" id="yym">  <label for="yym">Youth Medium</label> </div>  
+                <div><input type="checkbox" name="size" id="lll">  <label for="lll">Large</label> 
+               <input type="checkbox" name="size" id="yyl">  <label for="yyl">Youth Large</label> 
+               <input type="checkbox" name="size" id="xxl">  <label for="xxl">Extra Large</label> 
+               <input type="checkbox" name="size" id="ss">  <label for="ss">Small</label></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="terms">
+         <h6 class=subtitle>Permission to Play</h6>
+         
+         <p class="p5">I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside 
+          Youth Soccer League (NYSL). <br> In recognizing the possibility of physical injury associated with soccer and in consideration for the 
+          “League” accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, 
+          their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on 
+          behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL sponsored activities, 
+          which transportation.</p>
+
+          <p class="p5">By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the cancellation policy and agree to its terms.</p>
+    
+          <div class="signature"> <label for="signature">Parent / Guardian Signature:</label><input type=text name="signature" id="signature"  title="This field is required" required> 
+          <label for="date">Date:</label> <input type=text name="date" id="date" placeholder="mm/dd/yyyy" title="This field is required" required></div>
+        
+          <button type="submit" class="submitbtn">Submit</button>
+          </div>
+        </form>
+    </main>
+  </body>
+</html>

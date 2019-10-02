@@ -1,0 +1,635 @@
+/* =========================================== GLOBAL ================================================== */
+* {
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;;
+    margin:0px;
+    padding:0px;    
+}
+
+/* HEADER */
+
+header{
+    margin-top:0px;
+    position: relative;
+}
+
+.background{
+    background-color:teal;
+    width:100%;
+    height: 239px;
+    border: outset;  
+}
+
+.socialmedia{
+    position: absolute;
+    right: 48px;
+    top: 23px;
+}
+
+.socialmedia img{
+    width:30px;
+    margin-right:10px;
+}
+
+.logo{
+    position: absolute;
+    left: 33px;
+    top: 21px;
+}
+
+.logo img { 
+    height: 192px;
+    width: 198px;   
+}
+
+.title1 {
+    font-size: 57px;
+    color: whitesmoke;
+    padding-left: 10px;
+    font-weight: normal;
+    position: absolute;
+    right: 55px;
+    top: 67px;  
+}  
+
+/* NAVIGATION BAR */
+
+nav {
+    position:relative;
+    padding: 10px 20px 10px 10px;
+    text-align: center;
+    line-height: 25px;
+    background-color:lawngreen;  
+    border-right:outset;
+    border-left:outset;
+    border-bottom: outset;  
+} 
+
+ul li {
+    display: inline;
+}
+
+li a {
+    font-size:20px;
+    color: whitesmoke;
+    text-align: center;
+    padding: 5px;
+    margin-right: 20px; 
+    text-transform: uppercase;  
+}
+
+li a:hover{
+    border: inset;
+    background-color:teal;
+}  
+
+a {
+    text-decoration: none; 
+    font-weight:bold;
+}
+
+.active_page {
+    text-decoration: underline;
+ }
+
+/* ========================================== INDEX =================================================== */
+
+/* HEADER INDEX */
+.title2 {
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin-top:26px;  
+}   
+
+.homepage {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left:70px;
+    margin-right:70px;
+    margin-top:30px;
+    margin-bottom: 40px;
+}
+
+.image {
+    margin-top: 0px; 
+    margin-right: -172px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+
+.image img {
+    border-radius: 8px;
+    height: auto;
+    width:80%;
+   
+} */
+
+/* UPCOMING EVENTS */
+
+.homesection {
+    display:flex;
+    flex-direction: column;
+    line-height: 27px;
+} 
+
+.far.fa-calendar-alt /* ICON */ {
+    font-size:25px;
+}
+
+.p1 { 
+    font-size: 20px;
+    color: black; 
+    margin-top: 30px;
+}
+
+/* ============================================= ABOUT US ================================================ */
+
+/* HEADER ABOUT US */
+.main {
+    display: flex;
+    flex-flow: row;
+    align-content: space-between;  
+}
+    
+.photo { 
+    position: absolute;
+    right: 0px;
+    top: 437px;   
+    width: 40%;
+    display:inline-block;
+}
+
+.photo img {
+    width: 378px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* ABOUT US */
+.abtsection {
+    display: flex;
+    flex-flow: column;
+    width: 44%;
+    margin-top: 26px;
+    margin-left: 116px;
+    margin-bottom: 40px;
+}
+
+.title3 { 
+    font-size: 20px;
+    color: black; 
+    margin-top: 27px; 
+}
+
+h3 { 
+    font-size: 25px;
+    text-transform: uppercase;
+    color: black; 
+    margin-top: 10px;
+}
+
+.p2 { 
+    font-size: 18px;
+    color: black; 
+    margin: 24px;
+    line-height: 150%;
+    max-width:60em;
+}
+
+.p2:hover, .h1:hover, .h2:hover, .h3:hover{
+    font-weight:bold;
+    font-size: 22px;
+  }
+
+/* =============================================== GAME INFO =============================================== */
+
+/* HEADER GAME INFO */
+
+.title4 {
+    color: black; 
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-top:47px;
+}
+
+.far.fa-futbol /* icon */ {
+    font-size:30px;
+}
+
+.title7 {
+    color: black; 
+    text-align: left;
+    font-size: 22px;
+    font-style: italic;
+    padding-top: 24px;
+    padding-bottom: 14px;
+    margin-left:220px;
+}
+
+.p4 {
+    color: black;
+    text-align: left;
+    font-style: italic;
+    margin-left:220px;
+    padding-bottom: 20px;
+}
+
+/* TABLES */
+
+.table1, .table2, .table3 {
+    margin-left:auto; 
+    margin-right:auto;
+    margin-bottom:50px;
+    display:table;
+    color: black;
+    width:70%;
+    padding-bottom: 28px;
+    padding-top:10px;
+    font-size: 18px;
+    line-height: 150%;
+    border:outset;
+    border-radius: 5px;
+    background-color: lightgrey; 
+}
+
+.gameaddress {
+    font-style: oblique;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.bottom {
+    margin-left:auto; 
+    margin-right:auto;
+    margin-bottom:50px;
+    width:70%;
+    border:outset;
+    border-radius: 5px;
+    background-color: lightgrey; 
+    margin-top: 26px;
+    padding-bottom: 28px;
+    padding-top:10px;
+}
+
+.contacts{
+    width:90%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-left:0px;
+}
+
+.p3{
+    color: black;
+    text-align: justify;
+    margin-left:63px;
+    padding-top:30px;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+
+th {
+    font-size: 20px;
+    text-decoration: underline;
+    padding-top:10px;
+    padding-right: 114px;
+    padding-bottom: 2px;   
+    text-align: left; 
+    padding-left:60px;
+}
+
+td {
+    padding-left:60px;
+}
+
+.tr {
+    padding:2px;
+}
+    
+/* MAPS */
+
+.title8 {
+    text-align: center;
+    font-size: 14px;
+}
+
+.maps {
+    width:60%;
+    margin-left:264px; 
+    margin-right:auto;
+    margin-bottom:auto;
+    padding: 10px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.mapimag {
+    width:300px;
+    height: 200px;
+    border-radius: 5px;
+    padding-top:5px;
+    transition: width 0.5s, height 0.5s;
+
+}
+
+.mapimag:hover{
+    width:500px;
+    height: 500px;
+
+}
+/* ========================================== RULES AND POLICIES ===================================== */
+.fas.fa-arrow-up /* icon */{
+    font-size: 54px;
+    position:fixed;
+    right:30px;
+    bottom: 20px;
+    color:lawngreen;
+    width:50px;
+    height:50px;
+} 
+
+/*  TOP MENU RULES */
+
+.menurules {
+    display:flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding:26px;
+    line-height: 20px;
+    background:whitesmoke;
+    border-left: outset;
+    border-right: outset;
+    border-bottom: outset;
+ }
+    
+.left, .center, .right {
+    display:flex;
+    flex-direction: column;
+}
+.arul{
+    color: black;
+    font-weight: normal;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* TITLES  */
+
+.wrapper {
+    color: black; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    margin-bottom: 50px;
+    width:70em;
+    font-size: 18px;
+    line-height: 150%;
+    display:flex;
+    flex-direction: column;
+ }
+
+.title5{
+    color: black; 
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+    
+.title6{
+    color: black; 
+    text-align: center;
+    font-size: 20px;
+    padding-top:30px;
+}
+
+/* RULES AND REGULATIONS LIST */
+
+.rules{
+    border: solid;
+    border-radius:14px;
+    padding: 52px;
+    margin-top:30px;
+}
+  
+h5 {
+    font-size: 18px;
+    text-indent: -2em;
+    
+}
+
+ul.a  li {
+    list-style-type: square;
+    display: list-item;
+    padding-bottom: 2px;
+}
+
+ol.b li {
+    list-style-type: decimal;
+    padding-bottom: 2px;
+}
+
+ol.c li {
+    list-style-type: lower-alpha;
+    padding-bottom: 2px;
+    margin-left:50px; 
+}
+
+ul.d  li {
+    list-style-type: square;
+    display: list-item;
+    padding-bottom: 2px;
+}
+
+ol.e li {
+    list-style-type: decimal;
+    padding-bottom: 2px;
+    margin-left:50px;
+}
+
+ul.f li {
+    list-style-type: circle;
+    display: list-item;
+    padding-bottom: 2px;
+    margin-left:50px;
+}
+/* ========================================== REGISTRATION FORM ======================================= */
+.far.fa-file-alt /* icon */{
+    font-size:30px;
+}
+
+/* FORMS */
+
+.form1, .form2, .form3, .terms, .form45 {
+    display: flex;
+    width: 86%;
+    margin-top:30px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;  
+    line-height: 30px;
+    font-size: 18px;
+    border:solid;
+    border-color: darkslategray;
+    border-radius: 14px;
+    border-width: 2px;
+    padding:20px;
+}
+
+.dropdownmenu /* belongs to form 2 */ {
+    margin-left: 17px;
+    width: 152px;
+    height: 22px;
+    font-size: medium;
+}
+
+.form4 /* part of form 45 */  {
+    margin-bottom: 24px;
+    font-size: 18px;  
+}
+    
+.form5 /* part of form 45 */  {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-top:10px;
+    font-size: 18px;
+    line-height: 30px;
+    width: 86%;    
+}
+.uniform /* belongs to form 5 */ { 
+    flex-grow:1;
+}
+.form1:hover, .form2:hover,.form3:hover, .terms:hover, .form45:hover {
+    border:solid;
+    border-color: teal;
+    background-color:lightgrey;
+    border-width: 5px;
+}
+
+/* LABELS */
+
+h6 { 
+    font-size: 20px;
+    margin-left:4px;
+    margin-top: 7px;
+    padding-bottom:10px;
+ }
+
+.p5 { 
+    font-size: 16px;
+    padding: 10px;
+    text-align: justify;
+    line-height: 22px;   
+ }
+
+.signature { 
+    padding-top:26px;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.guardian{
+    margin-top: 6px;
+    margin-left: 1px;
+}
+
+.birthdate {
+    display:flex;
+    flex-flow: row;
+}
+
+.details {
+    margin-top: 6px;
+    margin-left: 1px;
+}
+
+.subtitle {
+    text-decoration:underline;
+    text-align: left;
+    font-size: 18px;
+    margin-left: 11px;
+}
+
+/* INPUT */
+
+#firstname, #lastname, #city, #zip,#contactphone, #contactemail, #signature, #date,
+#address,#parent {
+    width: 35%;
+    height: 34px;
+    margin: 4px;
+    font-size: 16px;
+    padding: 2px 2px 2px 2px;
+}
+
+#month,#day,#year {
+    width: 5%;
+    height: auto;
+    margin: 4px;
+    font-size: 16px;
+    padding: 2px 2px 2px 2px;
+} 
+
+/* SUBMIT BUTTON */
+
+button {
+    background-color: #e7e7e7; color: black;
+    font-size: 28px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 900px;
+    padding: 15px;
+    Width:10%;
+}
+
+button:hover{
+    background-color: darkgray;
+}
+
+label{
+    padding:7px;
+}
+
+/* ============================================= CONTACT US ========================================== */
+.far.fa-envelope /* icon */ {
+    font-size: 30px;
+}
+
+.moresection {
+    margin-left: 236px;
+    margin-top: 54px;
+    width:60em;
+    line-height: 150%;
+}
+/* ============================================ SHOW DATA ============================================= */
+.results {
+    font-size: 18px;
+    background-color: whitesmoke;
+    color: black;
+    border:solid;
+    border-color: black;
+    margin-left:458px;
+    margin-top: 20px;
+    border: 1px;
+    text-align:center;
+    width:226px; 
+    border-collapse: collapse;
+}
+
+.results td {
+    border: 1px solid black;
+    text-align: left;
+}
+
+.results th {
+    border: 1px solid black;
+    text-align: left;
+}
+/* ============================================== END ================================================== */
